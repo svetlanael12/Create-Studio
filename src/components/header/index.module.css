@@ -1,0 +1,22 @@
+.header {
+  position: fixed;
+  max-width: 1180px;
+  width: 98%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--green);
+
+  z-index: 100;
+}
+
+.btnWrp {
+  width: 200px;
+}
+
+@media (max-width: 960px) {
+  .btnWrp {
+    display: none;
+  }
+}

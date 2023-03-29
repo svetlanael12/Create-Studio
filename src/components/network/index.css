@@ -1,0 +1,13 @@
+.networks {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.networks li {
+  margin-left: 10px;
+}
+
+.networks li:hover svg path {
+  fill: var(--blue)
+}
