@@ -6,7 +6,25 @@
 
   list-style-type: none;
 }
+.item {
+  font-size: 2rem;
+  font-weight: 300;
 
+  cursor: pointer;
+  position: relative;
+}
+.item:hover {
+  color: var(--blue);
+}
+.item:hover::after{
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--blue);
+}
 @media (max-width: 960px) {
   .headerNav {
     display: none;

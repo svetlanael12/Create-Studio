@@ -175,4 +175,12 @@ textarea.custom-input {
   h2 {
     font-size: 2rem;
   }
+    
+  p {
+    font-size: 1.5rem;
+  }
+
+  p.pg-light {
+    font-size: 1.3rem;
+  }
 }

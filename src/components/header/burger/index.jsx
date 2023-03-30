@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import styles from './index.module.css';
-import './index.css'
-import { NAVIGATION } from '../../../constants/navigation';
 import Network from '../../network';
+import NavigationLink from '../../../routes/NavigationLink';
+
+import './index.css'
 
 export default function Burger() {
   const [burger, setBurger] = useState('')
@@ -20,7 +20,7 @@ export default function Burger() {
         <span className='line line3'></span>
       </div>  
       <div className="burger__menu">
-        {NAVIGATION.map((nav, ind) => <li className='burger__item' key={ind}><a href="#">{nav}</a></li>)}
+        <NavigationLink className='burger__item'/>
         <li className='burger__item'>
           <Network />
         </li>

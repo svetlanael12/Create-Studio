@@ -66,6 +66,9 @@
   margin-top: 10px;
   font-size: 2rem;
 }
+.burger__menu .burger__item:hover {
+  color: var(--blue);
+}
 
 
 @media (max-width: 960px) {
