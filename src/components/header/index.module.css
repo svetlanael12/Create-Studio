@@ -1,7 +1,7 @@
 .header {
   position: fixed;
   max-width: 1180px;
-  width: 98%;
+  width: 95%;
   margin: auto;
   display: flex;
   justify-content: space-between;
