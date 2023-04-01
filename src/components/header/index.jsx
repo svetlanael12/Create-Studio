@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Logo from '../logo';
 import Navigation from '../navigation';
 import Burger from './burger';
 import styles from './index.module.css';
 
-export default function Header() {
+export default function Header({scroll}) {
   return (
-    <div className={styles.header}>
+    <div className={`${styles.header} ${scroll < 50 ? "" : styles.scroll}`}>
       <Logo />
       <Navigation header/>
       <p>

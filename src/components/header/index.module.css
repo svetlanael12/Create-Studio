@@ -1,5 +1,7 @@
 .header {
   position: fixed;
+  padding-top: 10px;
+  top: 0;
   max-width: 1180px;
   width: 95%;
   margin: auto;
@@ -10,7 +12,9 @@
 
   z-index: 100;
 }
-
+.header.scroll {
+  background-color: rgba(17,71,78,0.8);
+}
 .btnWrp {
   width: 200px;
 }

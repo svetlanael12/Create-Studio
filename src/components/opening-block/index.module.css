@@ -1,7 +1,6 @@
 .openingBlock {
   width: 100%;
   max-width: 700px;
-  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9,50 +8,20 @@
   position: relative;
   z-index: 10;
 }
-
-.openingBlock::after {
-  content: '';
-  width: 100vw;
-  height: 100vh;
-  top: -170px;
-  bottom: 0;
-  right: 0;
-  left: -10px;
-  background-image: url('../assets/img/city.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  position: absolute;
-  z-index: -20;
-}
-.openingBlock::before {
-  content: '';
-  width: 100vw;
-  height: 100vh;
-  top: -170px;
-  bottom: 0;
-  right: 0;
-  left: -10px;
-  background: rgb(17,71,78);
-  background: radial-gradient(circle, rgba(17,71,78,0.3) 0%, rgba(17,71,78,0.8839868711156338) 54%, rgba(17,71,78,1) 76%, rgba(17,71,78,1) 100%);
-
-  position: absolute;
-  z-index: -17;
-}
-
 .wrpText {
-  height: 130px;
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
+.wrpText * {
+  margin-top: 10px;
+}
 .btnWrap {
   width: 300px;
 }
-
-@media (max-width: 960px) {
-  .openingBlock {
-    height: 190px;
+@media (max-width: 768px) {
+  .btnWrap {
+    width: 100%;
   }
 }

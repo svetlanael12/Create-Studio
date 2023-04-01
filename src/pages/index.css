@@ -1,0 +1,40 @@
+.app-about {
+  position: relative;
+}
+.app-about::after {
+  content: '';
+  overflow: hidden;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: -10px;
+  background-image: url('../components/assets/img/city.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  -webkit-box-shadow: 0px -26px 57px 51px rgba(17, 71, 78, 0.88) inset;
+  -moz-box-shadow: 0px -26px 57px 51px rgba(17, 71, 78, 0.88) inset;
+  box-shadow: 0px -26px 57px 51px rgba(17, 71, 78, 0.88) inset;
+
+  position: absolute;
+  z-index: -20;
+}
+.app-about::before {
+  display: block;
+  overflow: hidden;
+  content: '';
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: -10px;
+  background: rgb(17,71,78);
+  background: radial-gradient(circle, rgba(17,71,78,0.3) 0%, rgba(17,71,78,0.8839868711156338) 54%, rgba(17,71,78,1) 76%, rgba(17,71,78,1) 100%);
+
+  position: absolute;
+  z-index: -17;
+}

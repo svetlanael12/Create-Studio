@@ -4,7 +4,7 @@
   --gray: #C5C6C7;
   --dark: #11474e;
   --blue: #66FCF1;
-  /* --green: #11474e; */
+  --bg-blure: rgba(255, 255, 255, 0.2);
 }
 
 * {
@@ -26,6 +26,8 @@ body {
   position: relative;
   background-color: var(--dark);
   z-index: -16;
+
+  overflow-x: hidden; 
 }
 
 .App {
@@ -36,8 +38,10 @@ body {
 }
 
 h1 {
-  width: max-content;
+  width: 100%;
+  max-width: 1000px;
   font-size: 8rem;
+  line-height: 1.2;
   background-color: var(--blue);
   background-image: linear-gradient(0deg, rgba(102,252,241,1) 0%, rgba(102,169,252,1) 40%, rgba(253,45,159,1) 100%);
 
@@ -50,7 +54,7 @@ h1 {
 }
 
 h2 {
-  margin: 30px auto;
+  margin: 5rem auto;
   font-size: 5rem;
   font-weight: 700;
   line-height: 1;

@@ -12,7 +12,10 @@
 
 .advantageWrp li {
   position: relative;
+
+  z-index: 20;
 }
+
 
 .advantageWrp li:not(:last-child):after {
   position: absolute;

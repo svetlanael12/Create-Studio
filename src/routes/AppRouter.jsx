@@ -7,23 +7,23 @@ import Development from '../pages/Development';
 
 import { ARTICLES_ROUTE, DEVELOPMENT_ROUTE, ABOUT_ROUTE, PORTFOLIO_ROUTE } from '../constants/routes';
 
-export default function AppRouter () {
+export default function AppRouter ({scroll}) {
       let publicRoutes = useRoutes([
         {
           path: ARTICLES_ROUTE,
-          element: <Articles />,
+          element: <Articles scroll={scroll}/>,
         },
         {
           path: ABOUT_ROUTE,
-          element: <About />,
+          element: <About scroll={scroll}/>,
         },
         {
             path: DEVELOPMENT_ROUTE,
-            element: <Development />,
+            element: <Development scroll={scroll}/>,
         },
         {
             path: PORTFOLIO_ROUTE,
-            element: <Portfolio />,
+            element: <Portfolio scroll={scroll}/>,
         }
       ]);
     return (

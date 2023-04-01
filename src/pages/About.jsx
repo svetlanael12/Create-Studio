@@ -3,12 +3,27 @@ import Advantage from '../components/advantage';
 import Header from '../components/header'
 import Main from '../components/main';
 import Services from '../components/services';
+import OpeningBlock from '../components/opening-block';
+import styl from '../components/opening-block/index.module.css';
+import './index.css';
+import CMS from '../components/CMS';
 
-export default function About() {
+export default function About({scroll}) {
   return (
-    <div className="App">
-      <Header />
-      <Main />
+    <div className="App app-about">
+      <Header scroll={scroll}/>
+      <Main>
+        <OpeningBlock>
+          <h1>Create Studio</h1>
+          <div className={styl.wrpText}>
+            <p><strong>Веб-студия - полного цикла</strong></p>
+            <p className='pg-light'>Мы оказываем полный спектр услуг по разработке веб-сайтов, их дальнейшему продвижению и поддержке.</p>
+            <div className={styl.btnWrap}>
+              <button className='blue-btn'>Получить консультацию</button>
+            </div>
+          </div>
+        </OpeningBlock>
+      </Main>
       <h2>Наши преимущества</h2>
       <Advantage>
         <li><p><strong className='text-blue'>Более 300 </strong>реализованных проектов</p></li>
@@ -24,6 +39,7 @@ export default function About() {
         <li><p><strong>SEO-продвижение</strong></p></li>
         <li><p><strong>Техническая поддержка сайта</strong></p></li>
       </Services>
+      <CMS />
     </div>
   )
 }
