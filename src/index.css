@@ -100,7 +100,9 @@ li {
 a:hover {
   color: var(--blue);
 }
-
+.active {
+  color: var(--blue);
+}
 .blue-btn {
   width: 100%;
   padding: 7px 30px;

@@ -7,6 +7,8 @@ import OpeningBlock from '../components/opening-block';
 import styl from '../components/opening-block/index.module.css';
 import './index.css';
 import CMS from '../components/CMS';
+import OurProgress from '../components/our-progress';
+import OurPortfolio from '../components/portfolio';
 
 export default function About({scroll}) {
   return (
@@ -39,7 +41,12 @@ export default function About({scroll}) {
         <li><p><strong>SEO-продвижение</strong></p></li>
         <li><p><strong>Техническая поддержка сайта</strong></p></li>
       </Services>
+      <h2>Мы работаем с CMS:</h2>
       <CMS />
+      <h2>Портфолио</h2>
+      <OurPortfolio />
+      <h2>Наше развитие</h2>
+      <OurProgress />
     </div>
   )
 }

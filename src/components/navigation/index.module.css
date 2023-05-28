@@ -6,12 +6,14 @@
 
   list-style-type: none;
 }
+
 .item {
   font-size: 2rem;
   font-weight: 300;
 
   cursor: pointer;
   position: relative;
+  color: inherit;
 }
 .item:hover {
   color: var(--blue);
