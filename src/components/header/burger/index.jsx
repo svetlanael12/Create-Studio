@@ -3,6 +3,8 @@ import Network from '../../network';
 import NavigationLink from '../../../routes/NavigationLink';
 
 import './index.css'
+import { NavLink } from 'react-router-dom';
+import { ABOUT_ROUTE } from '../../../constants/routes';
 
 export default function Burger() {
   const [burger, setBurger] = useState('')
@@ -24,7 +26,7 @@ export default function Burger() {
         <li className='burger__item'>
           <Network />
         </li>
-        <li className='burger__item'><button className='blue-btn'>Оставить заявку</button></li>
+        <li className='burger__item'><a href='/#application' className='blue-btn'>Оставить заявку</a></li>
       </div>
     </div>
   )

@@ -63,7 +63,16 @@ h2 {
   position: relative;
   z-index: 10;
 }
-
+h3 {
+  margin: 1.6rem auto;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: lowercase;
+  color: var(--blue);
+  position: relative;
+  z-index: 10;
+}
 p {
   font-size: 1.8rem;
   line-height: 1.2;
@@ -76,6 +85,9 @@ p.pg-light {
   font-weight: 100;
   position: relative;
   z-index: 10;
+}
+.text-blue {
+  color: var(--blue);
 }
 strong.text-blue {
   display: block;
@@ -91,6 +103,8 @@ a {
   text-decoration: none;
   position: relative;
   z-index: 10;
+
+  cursor: pointer;
 }
 
 li {
@@ -145,6 +159,7 @@ textarea.custom-input {
 }
 
 .custom-checkbox {
+  margin: 10px 0;
   display: flex;
   align-items: center;
 
@@ -169,6 +184,13 @@ textarea.custom-input {
   text-align: center;
   font-size: 1.2rem;
   color: transparent;
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+  background-image: url('./components/assets/svg/checkmark_83735.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
 }
 
 .custom-checkbox:hover .checkmark {

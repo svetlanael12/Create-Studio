@@ -1,6 +1,5 @@
 import React from 'react';
 import Advantage from '../components/advantage';
-import Header from '../components/header'
 import Main from '../components/main';
 import Services from '../components/services';
 import OpeningBlock from '../components/opening-block';
@@ -9,11 +8,12 @@ import './index.css';
 import CMS from '../components/CMS';
 import OurProgress from '../components/our-progress';
 import OurPortfolio from '../components/portfolio';
+import Vacancies from '../components/vacancies';
+import Application from '../components/application';
 
-export default function About({scroll}) {
+export default function About() {
   return (
     <div className="App app-about">
-      <Header scroll={scroll}/>
       <Main>
         <OpeningBlock>
           <h1>Create Studio</h1>
@@ -47,6 +47,12 @@ export default function About({scroll}) {
       <OurPortfolio />
       <h2>Наше развитие</h2>
       <OurProgress />
+      <h2>Мы берем проекты <span className='text-blue'>любой</span> сложности</h2>
+      <p>Мы готовы обсудить ваш проект. Вместе с вами сформулируем цели и поставим задачи. Мы ответим на все ваши вопросы и составим индивидуальное предложение. Для этого <a className='text-blue' href="#application">оставьте заявку</a> на сайте или позвоните по номеру: <a href="tel:+79263000000" className='text-blue'>8 (926) 300 00 00</a></p>
+      <h2>Оставить заявку на консультацию</h2>
+      <Application />
+      <h2>Вакансии</h2>
+      <Vacancies />
     </div>
   )
 }

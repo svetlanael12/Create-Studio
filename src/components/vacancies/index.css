@@ -1,0 +1,90 @@
+.vacancies {
+  padding: 20px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 10px;
+  background: #46918c5e;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 2;
+}
+.vacancies::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgb(17,71,78);
+  background: radial-gradient(circle, rgba(17,71,78,0.6402893921240371) 43%, rgba(17,71,78,1) 100%);
+  z-index: -2;
+}
+.vacancies::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: url('../assets/img/city2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  -webkit-box-shadow: 33px 2px 36px 27px rgba(17, 71, 78, 1) inset;
+  -moz-box-shadow: 33px 2px 36px 27px rgba(17, 71, 78, 1) inset;
+  box-shadow: 33px 2px 36px 27px rgba(17, 71, 78, 1) inset;
+  z-index: -2;
+}
+.vacancies__form {
+  margin-right: 60px;
+  flex-basis: 40%;
+  flex-shrink: 0;
+}
+.vacancies__form .blue-btn {
+  width: max-content;
+}
+.vacancies__text {
+  height: max-content;
+  position: relative;
+}
+.vacancies__text::before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 3px;
+  left: -10px;
+  top: 0;
+  bottom: 0;
+
+  background-color: var(--blue);
+  border-radius: 2px;
+}
+.vacancies__text p {
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .vacancies {
+    padding: 0;
+    flex-direction: column;
+  }
+  .vacancies__form {
+    margin-right: 0;
+    margin: auto;
+    width: 100%;
+  }
+  .vacancies__text {
+    order: -1;
+  }
+  .vacancies__text::before {
+    display: none;
+  }
+}

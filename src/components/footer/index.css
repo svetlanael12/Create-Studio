@@ -1,0 +1,70 @@
+.footer {
+  width: 100%;
+  /* left: 50%;
+  transform: translate(-50%); */
+  position: relative;
+  padding-bottom: 50px;
+}
+.footer::before {
+  position: absolute;
+  content: '';
+  width: 100vw;
+  /* height: max-content; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--black);
+  z-index: -2;
+}
+.footer__content {
+  padding: 10px;
+  max-width: 1180px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+/* .footer__navigation {
+  align-self: flex-start;
+} */
+.footer__content .pg-light {
+  margin-top: 20px;
+}
+.footer__content .footer__link {
+  margin-top: 10px;
+  font-size: 1.8rem;
+}
+.footer__contacts p{
+  margin-top: 10px;
+}
+.footer__contacts a{
+  font-size: 1.6rem;
+}
+.footer__content .networks {
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.footer__politish {
+  margin: auto;
+  max-width: 400px;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 560px) {
+  .footer__content {
+    flex-direction: column;
+  }
+  .footer__logo {
+    display: none;
+  }
+  .footer__politish {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__politish a {
+    margin: 10px 0;
+  }
+}

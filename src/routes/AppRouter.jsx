@@ -6,6 +6,8 @@ import Portfolio from '../pages/Portfolio';
 import Development from '../pages/Development';
 
 import { ARTICLES_ROUTE, DEVELOPMENT_ROUTE, ABOUT_ROUTE, PORTFOLIO_ROUTE } from '../constants/routes';
+import Header from '../components/header';
+import Footer from '../components/footer';
 
 export default function AppRouter ({scroll}) {
       let publicRoutes = useRoutes([
@@ -28,7 +30,9 @@ export default function AppRouter ({scroll}) {
       ]);
     return (
       <>
+      <Header scroll={scroll}/>
       {publicRoutes}
+      <Footer />
       </>
     );
 };

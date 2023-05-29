@@ -1,0 +1,10 @@
+#application  {
+  max-width: 800px;
+}
+#application p {
+  margin: 20px 0;
+}
+#application .blue-btn {
+  width: max-content;
+  margin: 20px 0;
+}

@@ -13,7 +13,7 @@ export default function Header({scroll}) {
         <a href="" type='tel:+79897654321'>+7 (989) 765 43 21</a>
       </p>
       <div className={styles.btnWrp}>
-        <button className='blue-btn'>Оставить заявку</button>
+        <a href='#application' className='blue-btn'>Оставить заявку</a>
       </div>
       <Burger />
     </div>
