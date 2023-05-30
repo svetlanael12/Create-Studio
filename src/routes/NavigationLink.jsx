@@ -15,11 +15,11 @@ export default function NavigationLink({className}) {
           Портфолио
         </li>
       </NavLink>
-      <NavLink to={ARTICLES_ROUTE}>
+      {/* <NavLink to={ARTICLES_ROUTE}>
         <li className={className}>
           Статьи
         </li>
-      </NavLink>
+      </NavLink> */}
     </>
   )
 }

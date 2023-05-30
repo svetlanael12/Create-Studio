@@ -15,11 +15,9 @@
 
   z-index: 20;
 }
-
-
 .advantageWrp li:not(:last-child):after {
   position: absolute;
-  content: '';
+  content: "";
   width: 50px;
   height: 3px;
   background-color: var(--blue);
@@ -39,19 +37,15 @@
   .advantageWrp li:nth-child(2):after {
     display: none;
   }
-  .advantageWrp li:nth-child(-n+2)::before {
+  .advantageWrp li:nth-child(-n + 2)::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 90%;
     height: 3px;
     background-color: var(--blue);
     bottom: -20px;
     left: 50%;
-    /* transform: translate(0, 50%);  */
     margin-left: -45%;
-    /* right: -45px; */
-    /* transform: translate(0, 50%); */
-    /* transform: rotate(90deg); */
 
     border-radius: 2px;
   }

@@ -3,8 +3,6 @@ import Network from '../../network';
 import NavigationLink from '../../../routes/NavigationLink';
 
 import './index.css'
-import { NavLink } from 'react-router-dom';
-import { ABOUT_ROUTE } from '../../../constants/routes';
 
 export default function Burger() {
   const [burger, setBurger] = useState('')
