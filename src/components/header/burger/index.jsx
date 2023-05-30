@@ -26,7 +26,7 @@ export default function Burger() {
         <li className='burger__item'>
           <Network />
         </li>
-        <li className='burger__item'><a href='/#application' className='blue-btn'>Оставить заявку</a></li>
+        <li className='burger__item'><a href='#application' className='blue-btn'>Оставить заявку</a></li>
       </div>
     </div>
   )

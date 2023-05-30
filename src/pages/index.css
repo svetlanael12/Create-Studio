@@ -38,3 +38,7 @@
   position: absolute;
   z-index: -17;
 }
+.app-portfolio {
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
