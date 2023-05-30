@@ -1,4 +1,4 @@
-export const ABOUT_ROUTE = '/'
-export const DEVELOPMENT_ROUTE = '/development'
-export const PORTFOLIO_ROUTE = '/portfolio'
-export const ARTICLES_ROUTE = '/articles'
+export const ABOUT_ROUTE = '/Create-Studio'
+export const DEVELOPMENT_ROUTE = '/Create-Studio/development'
+export const PORTFOLIO_ROUTE = '/Create-Studio/portfolio'
+export const ARTICLES_ROUTE = '/Create-Studio/articles'
