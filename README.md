@@ -1,2 +1,2 @@
-[Create React App]([https://github.com/facebook/create-react-app](https://svetlanael12.github.io/)).
+[Create React App](https://svetlanael12.github.io/)
 
